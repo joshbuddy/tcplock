@@ -8,4 +8,4 @@ Luckily, TCPLock is here for you. TCPLock is a TCP/IP proxy that only allows a s
 Usage
 -----
 
-_tcplock -l [port to listen to] -p [port to proxy to] -h [host to proxy to]_
+_node tcplock.js -l [port to listen to] -p [port to proxy to] -h [host to proxy to]_

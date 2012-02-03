@@ -1,0 +1,23 @@
+{
+  "name": "tcplock",
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/index",
+  "version": "0.0.1",
+  "author": "Ben Coe <bencoe@gmail.com>",
+  "engines": [
+    "node"
+  ],
+  "description": "a TCP lock",
+  "keywords": [
+    "tcp",
+    "lock"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joshbuddy/tcplock.git"
+  },
+  "dependencies": {"argsparser": ">= 0.0.0"},
+  "devDependencies": {}
+}

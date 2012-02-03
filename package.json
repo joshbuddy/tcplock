@@ -1,11 +1,12 @@
 {
   "name": "tcplock",
   "directories": {
-    "lib": "./lib"
+    "lib": "./lib",
+    "bin": "./bin"
   },
   "main": "./lib/index.js",
   "bin": "./bin/index.sh",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Joshua Hull <joshbuddy@gmail.com>, Ben Coe <bencoe@gmail.com>",
   "engines": [
     "node"

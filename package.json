@@ -4,7 +4,7 @@
     "lib": "./lib"
   },
   "main": "./lib/index.js",
-  "bin": "./lib/index.js",
+  "bin": "./bin/index.sh",
   "version": "0.0.2",
   "author": "Joshua Hull <joshbuddy@gmail.com>, Ben Coe <bencoe@gmail.com>",
   "engines": [

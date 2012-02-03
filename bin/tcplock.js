@@ -1,3 +1,4 @@
+#!/usr/local/bin/node
 var TCPLock = require('tcplock').TCPLock,
   args = require('argsparser').parse(),
   puts = require('sys').puts;

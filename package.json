@@ -5,11 +5,11 @@
   },
   "main": "./lib/index",
   "version": "0.0.1",
-  "author": "Ben Coe <bencoe@gmail.com>",
+  "author": "Joshua Hull <joshbuddy@gmail.com>, Ben Coe <bencoe@gmail.com>",
   "engines": [
     "node"
   ],
-  "description": "a TCP lock",
+  "description": "A proxy that only allows one connection through on a given port at a time.",
   "keywords": [
     "tcp",
     "lock"

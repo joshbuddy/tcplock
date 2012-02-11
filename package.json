@@ -20,6 +20,6 @@
     "type": "git",
     "url": "git://github.com/joshbuddy/tcplock.git"
   },
-  "dependencies": {"argsparser": ">= 0.0.0"},
+  "dependencies": {"argsparser": ">= 0.0.0", "sexy-args": "0.0.1"},
   "devDependencies": {}
 }

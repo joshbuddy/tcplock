@@ -6,6 +6,10 @@ var TCPLock = require('tcplock').TCPLock,
 if (!args['-l'] || !args['-p']) {
   puts('Options:\n\t-l listen port\n\t-p proxy port\n\t-h proxy host\n\t-n number of connections allowed')
 } else {
-  var lock = new TCPLock(args['-l'], args['-p'], args['-h'], args['-n']);
-  lock.start();
+  var lock = new TCPLock({
+		listenPort: args['-l'],
+		proxyPort: args['-p'],
+		proxyHost: args['-h'],
+		totalConnections: args['-n']
+	});
 }

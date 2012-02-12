@@ -4,7 +4,7 @@ TCPLock
 Background
 ----------
 
-TCPLock grows out of a problem I had working at Attachments.me. We use OpenOffice's UNO web-service to convert between various document formats. Overtime OpenOffice leaks memory and locks up.
+TCPLock grows out of a problem I had working at [Attachments.me](http://attachments.me). We use OpenOffice's UNO web-service to convert between various document formats. Over time OpenOffice leaks memory and locks up.
 
 A potential solution is to restart OpenOffice periodically. Here's the problem, at any given time many clients are connecting to OpenOffice for conversion. This makes restarting the service an unsafe operation.
 
@@ -17,8 +17,9 @@ I extended on this concept somewhat, adding functionality specific to my OpenOff
 Contributors
 ------------
 
-[@joshbuddy](http://twitter.com/#/joshbuddy)
-[@benjamincoe](http://twitter.com/#/benjamincoe)
+[@benjamincoe](http://twitter.com/#/benjamincoe) Street walking cheetah with a heart full of napalm. CTO at Attachments.me.
+
+[@joshbuddy](http://twitter.com/#/joshbuddy) Comprised entirely of ☃. if you criticize me i melt.
 
 What Is It?
 -----------

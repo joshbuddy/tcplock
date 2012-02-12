@@ -6,8 +6,8 @@
   },
   "main": "./lib/index.js",
   "bin": "./bin/tcplock.js",
-  "version": "0.1.2",
-  "author": "Ben Coe <bencoe@gmail.com>, Joshua Hull <joshbuddy@gmail.com>",
+  "version": "1.0.0",
+  "author": "Joshua Hull <joshbuddy@gmail.com>, Ben Coe <bencoe@gmail.com>",
   "engines": [
     "node"
   ],
@@ -18,8 +18,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/bcoe/tcplock.git"
+    "url": "git://github.com/joshbuddy/tcplock.git"
   },
-  "dependencies": {"argsparser": ">= 0.0.0", "sexy-args": "1.0.0"},
+  "dependencies": {"argsparser": ">= 0.0.0", "sexy-args": "0.0.1"},
   "devDependencies": {}
 }

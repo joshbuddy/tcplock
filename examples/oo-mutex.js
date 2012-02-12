@@ -2,7 +2,9 @@
 var TCPLock = require('tcplock').TCPLock,
 	puts = require('util').puts,
 	exec = require('child_process').exec,
-	portscanner = require('portscanner');
+	portscanner = require('portscanner'),
+	count = 0,
+	timeoutOccurred = false;
 
 function waitForOOState(state, callback) {
 		(function checkForOOP() {
@@ -19,16 +21,26 @@ function waitForOOState(state, callback) {
 var lock = new TCPLock({
 	listenPort: 9000,
 	proxyPort: 8100,
-	timeout: 20000 // Only alow OOP to run for 20 seconds.
-}, function(activateNextConnection) {
-	exec('killall -9 soffice.bin libreoffice soffice', function(error, stdout, stderr) {
+	timeout: 20000, // Only alow OOP to run for 20 seconds.
+ 	onActivateNextConnection: function(activateNextConnection) {
+		if ( (count % 20) == 0 || timeoutOccurred) {
+			timeoutOccurred = false;
+			exec('killall -9 soffice.bin libreoffice soffice', function(error, stdout, stderr) {
 		
-		waitForOOState('closed', function() {
-			exec('libreoffice -headless -nofirststartwizard -accept="socket,host=0.0.0.0,port=8100;urp;StarOffice.Service"'); 
-			waitForOOState('open', function() {
-				activateNextConnection();
+				waitForOOState('closed', function() {
+					exec('libreoffice -headless -nofirststartwizard -accept="socket,host=0.0.0.0,port=8100;urp;StarOffice.Service"'); 
+					waitForOOState('open', function() {
+						activateNextConnection();
+					});
+				});
+		
 			});
-		});
-		
-	});
+		} else {
+			activateNextConnection();
+		}
+		count += 1;
+	},
+	onTimeoutOccurred: function() {
+		timeoutOccurred = true;
+	}
 });

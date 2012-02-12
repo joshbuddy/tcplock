@@ -6,8 +6,8 @@
   },
   "main": "./lib/index.js",
   "bin": "./bin/tcplock.js",
-  "version": "1.0.0",
-  "author": "Joshua Hull <joshbuddy@gmail.com>, Ben Coe <bencoe@gmail.com>",
+  "version": "1.0.1",
+  "author": "Ben Coe <bencoe@gmail.com>, Joshua Hull <joshbuddy@gmail.com>",
   "engines": [
     "node"
   ],

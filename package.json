@@ -18,8 +18,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/joshbuddy/tcplock.git"
+    "url": "git://github.com/bcoe/tcplock.git"
   },
-  "dependencies": {"argsparser": ">= 0.0.0", "sexy-args": "0.0.1"},
+  "dependencies": {"argsparser": ">= 0.0.0", "sexy-args": "1.0.0"},
   "devDependencies": {}
 }

@@ -22,7 +22,6 @@ var lock = new TCPLock({
 	listenPort: 9000,
 	proxyPort: 8100,
 	timeout: 20000, // Only alow OOP to run for 20 seconds.
-	proxyHost: '0.0.0.0',
  	onActivateNextConnection: function(activateNextConnection) {
 		if ( (count % 20) == 0 || timeoutOccurred) {
 			timeoutOccurred = false;
